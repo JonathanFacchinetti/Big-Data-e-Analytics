@@ -66,32 +66,44 @@ Gestão do macroambiente de captação e manutenção das informações. Suas pr
 Considerando o ciclo de vida do dado e da informação como tal expressado no DAMA-DMBoK, é possível identificar claramente as fases de responsabilidade de TI e de Negócios. De forma mais objetiva, podemos definir que Planejar, Especificar, e Disponibilizar a estrutura para receber o dado são fases que estão na esfera de coordenação da TI. Já Criar ou Adquirir, Manter e Usar, Arquivar e Recuperar, e por fim, Eliminar são fases inerentes ao negócio. O ciclo de vida do dado e da informação nos permite identificar a responsabilidade de cada um. 
 
 ### Data Stewards ou Administrador de Dados
+De acordo com o Gartner, muitas empresas europeias classificam a qualidade de dados como deficiente, sendo este o segundo maior problema de inteligência de negócios. O Gartner recomenda que as organizações implementem regras de administração de dados para melhorar essa qualidade. Para isso, é crucial nomear administradores de dados, que atuem como responsáveis pela garantia da qualidade, sem necessariamente serem proprietários dos dados. Esses administradores devem garantir que a qualidade dos dados seja mantida, a fim de suportar os processos de negócios. Um exemplo seria um especialista em marketing que atua como administrador de dados, assegurando que as informações relevantes para o marketing estejam completas, corretas, consistentes, confiáveis e sem redundâncias.
 
-Segundo Gartner, empresas europeias classificaram a qualidade de dados deficiente. Gartner diz que as organizações devem estabelecer regras de administração de dados para melhorar a qualidade dos dados. Segundo Gartner, empresas europeias classificaram a qualidade de dados deficiente como o segundo maior problema de inteligência de negócios. As organizações que se esforçam para melhorar a qualidade dos dados devem considerar a nomeação de administradores de dados, afirma Gartner. O sucesso da administração de dados exige que as organizações se movam em direção a uma cultura que considera os dados como um ativo competitivo ao invés de um mal necessário e que defina metas claras para a melhoria da qualidade dos dados.
+A qualidade dos dados é uma questão de negócios, não apenas de TI. Portanto, as empresas devem assumir a responsabilidade por impulsionar melhorias, estabelecendo metas claras e tratando os dados como um ativo competitivo. O aumento da complexidade da governança de dados com o advento do Big Data traz desafios adicionais para os administradores, especialmente em relação a dados não estruturados, provenientes de diversas fontes externas, como sistemas de transações, sensores, redes sociais e logs de sistemas. Nesses casos, os administradores de dados têm pouco controle sobre a qualidade das informações à medida que são criadas, o que complica ainda mais seu trabalho.
 
-"A qualidade dos dados é uma questão de negócios, não uma questão de TI, e exige do negócio assumir a responsabilidade e impulsionar melhorias. 
+Um ponto de discordância frequentemente encontrado é a relação entre os cientistas de dados e os administradores de dados. Enquanto os administradores visam manter a qualidade e consistência dos dados, os cientistas de dados podem se opor a processos de limpeza que, segundo eles, podem distorcer resultados de análises avançadas. No entanto, embora cientistas de dados possuam habilidades diferenciadas para explorar advanced analytics, sua posição não resolve todos os problemas de qualidade de dados, especialmente quando lidamos com aplicações on-line e fluxos de integração contínua, que exigem governança rigorosa.
 
-A nomeação de administradores de qualidade de dados ajuda as organizações a alcançar os objetivos de melhoria da qualidade dos dados. Esses indivíduos devem ser considerados peritos em assuntos para seus departamentos e agir como trustees de dados, em vez de proprietários deles. Eles irão garantir que a qualidade será mantida para suportar processos de negócios. Por exemplo, um especialista em Marketing do departamento de marketing da empresa poderia atuar como administrador de dados no programa de melhoria da qualidade dos dados, mantendo os dados de marketing completos, corretos, consistentes, confiáveis e não redundantes. Nessa função, eles têm a responsabilidade de assegurar as informações relevantes para o marketing seguir os padrões de qualidade dos dados corporativos. O desafio que já era enorme para a governança de dados ficou ainda maior com Big Data e os administradores de dados, apresentar novas soluções para estas complicações não será tão simples como as transações de dados estruturados.
+O uso de Big Data também introduz a persistência poliglota, com modelos NoSQL (Key/Value, Column Family, Graph, Documents), que contrastam com os tradicionais modelos de Entidade e Relacionamento. Essa mudança exige que administradores de dados, acostumados a schemas bem definidos, aprendam a trabalhar com modelos dinâmicos e schema-less. Mesmo assim, os desenvolvedores não devem ter total autonomia na criação e alteração de modelos, pois a governança de dados permanece sendo uma responsabilidade fundamental dos administradores, que precisam acompanhar a evolução do código e apoiar engenheiros de dados na escolha da melhor solução de persistência.
 
+Ao lidar com Big Data, a redundância e a desnormalização dos dados se tornam parte integrante da solução, ao contrário da abordagem tradicional, onde o volume de dados é reduzido por meio da normalização. Isso representa uma grande mudança de paradigma para os administradores de dados, que precisam adaptar suas práticas e suportar essa nova realidade ao mesmo tempo em que mantêm as políticas e a qualidade adequadas.
 ## Lean Manufacturing
 
-"Processos e procedimentos" podem lembrar burocracia, mas as empresas buscam agilidade, especialmente na TI, que pode ser um gargalo. A metodologia **Lean Manufacturing**, criada por Taiichi Ohno (Toyota), popularizada por James P. Womack e Daniel T. Jones, é uma filosofia de gestão focada em eliminar desperdícios.
+"Processos e procedimentos" podem lembrar burocracia, mas as empresas buscam agilidade, especialmente na TI, que pode ser um gargalo. A metodologia **Lean Manufacturing**, criada por Taiichi Ohno (Toyota) e popularizada por James P. Womack e Daniel T. Jones, é uma filosofia de gestão focada em eliminar desperdícios, garantindo eficiência e qualidade ao longo da cadeia produtiva.
 
-Governança de dados ágil foca em capacitar pessoas para fazer as coisas certas, como ensinado por Scott Ambler no **Instituto Agile Data**. Cinco passos importantes são:
+### Governança de Dados Ágil
 
-1. **Ativos Corporativos Valorizados:** Padrões e convenções adotados quando agregam valor aos desenvolvedores.
-2. **Incluir Profissionais de Dados nas Equipes:** Evitar grupos externos e fomentar a colaboração.
-3. **Educar Desenvolvedores:** Ensinar os benefícios do MDM (Master Data Management).
-4. **Pipeline de Projeto Guiado por Negócios:** Garantir alinhamento entre TI e os objetivos de negócio.
-5. **Conformidade Integrada:** Automatizar processos de conformidade para evitar sobrecarga.
+A governança de dados ágil foca em capacitar pessoas para tomar decisões rápidas e eficazes, como ensinado por Scott Ambler no **Instituto Agile Data**. Essa abordagem prioriza a colaboração entre equipes e a flexibilidade dos processos, visando a eliminação de gargalos e a adaptação contínua. Cinco passos importantes para a governança de dados ágil incluem:
 
-**Big Data** trouxe novos desafios de escalabilidade e governança. A **IBM** propôs o **Agile Information Governance Process (2014)**, com três fases: **Plan**, **Act**, e **Assess**, formando um ciclo contínuo. A governança ágil equilibra o uso rápido de dados com controle adequado.
+1. **Ativos Corporativos Valorizados:** Padrões e convenções devem ser adotados somente quando agregam valor real aos desenvolvedores e ao negócio.
+2. **Incluir Profissionais de Dados nas Equipes:** Evitar a criação de grupos externos e fomentar a colaboração direta entre equipes de TI e de negócios.
+3. **Educar Desenvolvedores:** Ensinar os benefícios do MDM (Master Data Management) e boas práticas de gerenciamento de dados.
+4. **Pipeline de Projeto Guiado por Negócios:** Garantir o alinhamento constante entre a TI e os objetivos estratégicos do negócio.
+5. **Conformidade Integrada:** Automatizar os processos de conformidade para minimizar a sobrecarga e manter o foco na agilidade.
+
+### Desafios de Big Data e Governança Ágil
+
+Com o surgimento do **Big Data**, novos desafios de escalabilidade e governança surgiram. A necessidade de balancear o uso rápido e flexível dos dados com controles adequados é um ponto central. Nesse contexto, a **IBM** propôs o **Agile Information Governance Process (2014)**, que segue três fases principais: **Plan**, **Act**, e **Assess**, formando um ciclo contínuo de governança ágil.
 
 ![IBM Agile Information Governance Process](https://github.com/JonathanFacchinetti/Big-Data-e-Analytics/blob/main/Imagens/IBM.png)
 
-O IBM Agile Information Governance Process consiste em seis etapas e três fases distintas. Na fase do Plan, as equipes de governança de dados definem o problema do negócio, obtêm patrocínio executivo, alinham com as equipes e entendem o risco e o valor dos dados. Na fase da Act, as organizações implementam um ou mais projetos baseados em casos de uso comum. Finalmente, na fase de Assess, as equipes de governança de dados medem os resultados. 
+#### Fases do Processo de Governança Ágil de Informação
 
-O IBM Agile Information Governance Process é construído como um loop contínuo. À medida que as equipes de governança de dados medem resultados em um projeto, elas começam de novo definindo o problema de negócios que pode gerar projetos adicionais. Uma notável diferença entre a governança da velha escola e a governança ágil é a suposição de que os projetos irão entrar e começar a usar os dados sem necessariamente se preocupar com qualidade e consistência. 
+1. **Plan (Planejar):** As equipes de governança de dados definem o problema de negócio, obtêm patrocínio executivo, alinham-se com as equipes de TI e compreendem o risco e o valor dos dados.
+2. **Act (Agir):** As organizações implementam um ou mais projetos baseados em casos de uso relevantes e bem definidos.
+3. **Assess (Avaliar):** As equipes de governança de dados medem os resultados dos projetos, avaliando seu impacto e ajustando processos para ciclos futuros.
 
-- Os dados podem ser carregados como estão porque os elementos de dados críticos e as relações podem não ser totalmente compreendidos. 
-- Os dados podem ser semiestruturados ou não estruturados e podem estar em qualquer quantidade.
+O **Agile Information Governance Process** da IBM é estruturado como um ciclo contínuo, no qual os resultados de um projeto geram insights que conduzem a novos ciclos de melhoria e governança. Ao contrário da governança tradicional, a governança ágil permite que os projetos utilizem dados rapidamente, sem a necessidade de perfeição inicial em termos de qualidade e consistência. 
+
+- Os dados podem ser carregados como estão, uma vez que os elementos críticos e as relações entre os dados podem não ser completamente compreendidos no início.
+- Podem ser semiestruturados ou não estruturados, provenientes de várias fontes e em diferentes quantidades.
+
+A abordagem ágil reconhece que, em muitos cenários, a velocidade e a flexibilidade são mais importantes do que a perfeição inicial dos dados, permitindo ajustes e melhorias contínuas à medida que os projetos avançam.
